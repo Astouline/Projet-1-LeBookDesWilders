@@ -2,4 +2,5 @@
 
 ## Team
 
-*Quentin
+- Quentin
+- Mathieu
