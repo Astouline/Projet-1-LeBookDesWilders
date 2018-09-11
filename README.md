@@ -3,3 +3,5 @@
 ## Team
 
 - Leuthsouline/Astouline
+- Mathieu
+- Quentin
