@@ -2,4 +2,7 @@
 
 ## Team
 
+- Michel 
+- Leuthsouline/Astouline
 - Mathieu
+- Quentin
