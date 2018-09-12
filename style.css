@@ -1,0 +1,45 @@
+.vignette .texte,
+.vignette .photo {
+  -webkit-backface-visibility: hidden;
+  /* Permet d'éviter de voir le bloc de dos */
+  backface-visibility: hidden;
+  /* Permet d'éviter de voir le bloc de dos */
+  -webkit-transition: 0.5s;
+  /* For Safari 3.1 to 6.0 */
+  transition: 0.5s;
+}
+
+.photo {
+  position: absolute;
+  z-index: 10;
+}
+
+.texte {
+  position: absolute;
+  -webkit-transform: rotateY(-180deg);
+  /* Safari */
+  transform: rotateY(-180deg);
+  /* Celui-ci est retourné par défaut */
+  z-index: 20;
+}
+
+.vignette:hover .photo,
+.vignette:focus .photo {
+  -webkit-transform: rotateY(180deg);
+  /* Safari */
+  transform: rotateY(180deg);
+  z-index: 20;
+}
+
+.vignette:hover .texte,
+.vignette:focus .texte {
+  -webkit-transform: rotateY(0deg);
+  /* Safari */
+  transform: rotateY(0deg);
+  /* On passe de -180° à 180° : tour complet */
+  z-index: 10;
+}
+
+.bg-orange-opacity {
+  background-color: rgba(243, 166, 31, 0.9);
+}
