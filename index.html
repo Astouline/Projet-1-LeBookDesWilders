@@ -11,15 +11,58 @@
     crossorigin="anonymous">
 
   <title>Le Book des wilders</title>
+  <style>
+    .vignette .texte,
+    .vignette .photo {
+      -webkit-backface-visibility: hidden;
+      /* Permet d'éviter de voir le bloc de dos */
+      backface-visibility: hidden;
+      /* Permet d'éviter de voir le bloc de dos */
+      -webkit-transition: 1s;
+      /* For Safari 3.1 to 6.0 */
+      transition: 1s;
+    }
+
+    .photo {
+      position: absolute;
+      z-index: 10;
+    }
+
+    .texte {
+      position: absolute;
+      -webkit-transform: rotateY(-180deg);
+      /* Safari */
+      transform: rotateY(-180deg);
+      /* Celui-ci est retourné par défaut */
+      z-index: 20;
+    }
+
+    .vignette:hover .photo,
+    .vignette:focus .photo {
+      -webkit-transform: rotateY(180deg);
+      /* Safari */
+      transform: rotateY(180deg);
+      z-index: 20;
+    }
+
+    .vignette:hover .texte,
+    .vignette:focus .texte {
+      -webkit-transform: rotateY(0deg);
+      /* Safari */
+      transform: rotateY(0deg);
+      /* On passe de -180° à 180° : tour complet */
+      z-index: 10;
+    }
+  </style>
 </head>
 
 <body>
   <div class="container">
 
     <div class="row">
-      <div class="col-12 col-md-6">
+      <div class="vignette col-12 col-md-6">
 
-        <div class="card rounded-circle">
+        <div class="photo card rounded-circle">
           <img class="card-img rounded-circle" src="https://picsum.photos/300/300/" alt="Card image">
           <div class="card-img-overlay text-center d-flex flex-column">
             <div class="card-text mt-auto">
@@ -28,20 +71,47 @@
           </div>
         </div>
 
-      </div>
-      <div class="col-12 col-md-6">
-
-        <div class="card rounded-circle h-100 bg-warning text-center">
-          <div class="card-body">
-            <p class="card-text">THOMAS</p>
-            <p class="card-text">Mathieu</p>
-            <p class="card-text">Ponctuel - Dynamique - </p>
-            <a href="#" class="btn btn-secondary mt-auto">Découvrir plus du Wilder ...</a>
+        <div class="texte card rounded-circle text-center d-flex flex-column">
+          <img class="card-img rounded-circle" src="https://picsum.photos/300/300/" alt="Card image">
+          <div class="card-img-overlay bg-warning text-center d-flex flex-column rounded-circle">
+            <div class="card-text m-auto">
+              <p>
+                <span class="h3">THOMAS</span><br>
+                <span class="h3">Mathieu</span><br><br>
+                Ponctuel - Dynamique - <br><br>
+                <a href="#" class="btn btn-secondary mt-auto">Découvrir plus du Wilder ...</a>
+              </p>
+            </div>
           </div>
-
         </div>
-      </div>
 
+      </div>
+      <div class="vignette col-12 col-md-6">
+
+        <div class="photo card rounded-circle">
+          <img class="card-img rounded-circle" src="https://picsum.photos/300/300/" alt="Card image">
+          <div class="card-img-overlay text-center d-flex flex-column">
+            <div class="card-text mt-auto">
+              <a href="#" class="btn btn-secondary">THOMAS - Mathieu</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="texte card rounded-circle text-center d-flex flex-column">
+          <img class="card-img rounded-circle" src="https://picsum.photos/300/300/" alt="Card image">
+          <div class="card-img-overlay bg-warning text-center d-flex flex-column rounded-circle">
+            <div class="card-text m-auto">
+              <p>
+                <span class="h3">THOMAS</span><br>
+                <span class="h3">Mathieu</span><br><br>
+                Ponctuel - Dynamique - <br><br>
+                <a href="#" class="btn btn-secondary mt-auto">Découvrir plus du Wilder ...</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
 
     <!-- Optional JavaScript -->
