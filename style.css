@@ -50,3 +50,7 @@
 .bg-orange-opacity {
   background-color: rgba(243, 166, 31, 0.9);
 }
+.card-img-jumbo {
+  opacity: 0.35;
+  background-size: 100%;
+}
