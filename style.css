@@ -51,5 +51,6 @@
   background-color: rgba(243, 166, 31, 0.9);
 }
 
-.iconmodal {
+.iconmodal:hover {
+  color: rgb(243, 166, 31);
 }
