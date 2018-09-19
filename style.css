@@ -1,7 +1,18 @@
 .vignette {
-  height: 300px;
+  height: 320px;
   border-radius: 50%;
   margin-top: 10px;
+  position: relative;
+}
+@media all and (min-width: 415px) and (max-width: 767px) {
+  .vignette {
+    height: 460px;
+  }
+}
+@media all and (max-width: 379px) {
+  .vignette {
+    height: 280px;
+  }
 }
 .vignette .texte,
 .vignette .photo {
@@ -51,11 +62,16 @@
   background-color: rgba(243, 166, 31, 0.5);
 }
 
-.iconmodal {
-  height: 50%;
-  width: 50%;
-}
-
 .iconmodal:hover {
   color: rgb(243, 166, 31);
+}
+
+.btn-primary {
+  background-color: rgb(243, 166, 31);
+  border: none;
+}
+.text-wild {
+  color: white;
+  text-shadow: 1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, -1px 0 0 black,
+    1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black;
 }
