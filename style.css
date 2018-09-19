@@ -76,3 +76,17 @@
 .text-primary {
   color: rgb(243, 166, 31) !important;
 }
+
+.logo{
+  width: 40px;
+  height: 40px;
+}
+
+footer a {
+color:white;
+}
+footer {
+color:white;
+}
+
+
