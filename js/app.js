@@ -251,12 +251,22 @@ $(function() {
     clement: {
       fisrtName: "Clement",
       lastName: "BECHETOILLE",
-      words: "Mes - Mots - Caractérisants"
+      description:
+        "Campus manager, Reims. <br> Diplômé de l’ESSCA d’Angers, Clément a d’abord travaillé à des fonctions marketing dans l’édition et les objets éducatifs avant de développer son expérience dans l’enseignement supérieur au Vietnam puis en France sur les sujets d’insertion professionnelle, de développement personnel et de recrutement innovant. Basé à Reims depuis quelques années, il s’implique dans les initiatives locales notamment l’organisation de TEDxReims. Passionné par les nouvelles approches pédagogiques, il a rejoint la Wild Code School comme Campus Manager à Reims",
+      wild:
+        "Aller à la découverte des cultures du monde, en Asie notamment, et surtout de tout ce qui se mange !",
+      linkedin: "https://www.linkedin.com/in/clementbechetoille/",
+      email: "clement@wildcodeschool.fr"
     },
     thomas: {
       fisrtName: "Thomas",
       lastName: "CULDAUT",
-      words: "Mes - Mots - Caractérisants"
+      description:
+        "Après des études en informatique, Thomas a tout de suite lié la pratique du développement et de la pédagogie dans le monde de la formation professionnelle en France et au Cameroun. S’ensuit une expérience dans une startup parisienne spécialisée dans le développement d’application événementielle au sein de laquelle il développe des jeux en AS3, Unity et PHP/JavaScript. Cela le mène à diriger une équipe de dév en Inde où il gère la réalisation de projets web.",
+      wild:
+        "Amateur de jeu de rôle, de plateau et de stratégie à base de figurines, quand il ne code pas Thomas peut passer des heures entre amis autour d’un jeu.",
+      linkedin: "https://www.linkedin.com/in/thomas-culdaut-76ba593/",
+      email: "thomas@wildcodeschool.fr"
     }
   };
 
@@ -288,9 +298,7 @@ $(function() {
 
     let spanFigcaption = document.createElement("span");
     spanFigcaption.setAttribute("class", "btn btn-primary");
-    spanFigcaption.innerText = `${dataSupervisors[index].fisrtName} ${
-      dataSupervisors[index].lastName
-    }`;
+    spanFigcaption.innerText = `${dataSupervisors[index].fisrtName}`;
 
     let aside = document.createElement("aside");
     aside.setAttribute(
@@ -318,7 +326,7 @@ $(function() {
     <a href="#" class="btn btn-secondary mt-auto shadow-lg" 
     data-toggle="modal" 
     data-target="#ModalWilder${
-      dataSupervisors[index].lastName
+      dataSupervisors[index].fisrtName
     }">Découvrir plus du Wilder ...</a>`;
 
     document
@@ -420,7 +428,7 @@ $(function() {
             <!-- 3 MOTS -->
             <section class="row">
               <article class="col-12">
-                <hr class="w-50 bg-orange-opacity mt-0">
+                <hr class="w-50 mt-0 bg-orange-opacity">
                 <h3 class="text-center">${dataWilders[index].words}</h3>
                 <hr class="w-50 bg-orange-opacity">
               </article>
@@ -448,5 +456,59 @@ $(function() {
     `;
 
     document.getElementById("Modal").appendChild(containModal);
+  }
+
+  for (let index in dataSupervisors) {
+    let containModalSupervisors = document.createElement("article");
+    containModalSupervisors.innerHTML = `
+    <!-- MODAL -->
+    <div class="modal fade" id="ModalWilder${
+      dataSupervisors[index].fisrtName
+    }" tabindex="-1" role="dialog" aria-labelledby="ModalWilder-Title"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header border border-white p-1">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <!-- PHOTO + NOM/PRENOM -->
+          <section class="modal-body pt-0 container-fluid">
+            <article class="row">
+              <figure class="col-12 text-center">
+                <img class="rounded-circle img-fluid" src="photos/${
+                  dataSupervisors[index].fisrtName
+                }300.jpg"
+                  alt="image de profil">
+              </figure>
+              <figcaption class="col-12">
+                  <h3 class="text-center">${dataSupervisors[index].fisrtName} ${
+      dataSupervisors[index].lastName
+    }</h3>
+              </figcaption>
+            </article>
+            <!-- 3 MOTS -->
+            <section class="row">
+              <article class="col-12">
+                <hr class="w-50 mt-0 bg-orange-opacity">
+                <h4 class="text-center">Son parcours</h4>
+                <p class="text-center">${dataSupervisors[index].description}</p>
+              </article>
+              <article class="col-12 mx-auto">
+                <h4 class="text-center">Côté wild</h4>
+                <p class="text-center">
+                  ${dataSupervisors[index].wild}</p>
+              </article>
+            </section>
+          </section>
+        </div>
+
+      </div>
+    </div>
+
+    `;
+
+    document.getElementById("Modal").appendChild(containModalSupervisors);
   }
 });

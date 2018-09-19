@@ -73,20 +73,24 @@
   background-color: rgb(243, 166, 31);
   border: none;
 }
+.btn-primary:hover {
+  color: rgb(243, 166, 31);
+  background-color: white;
+  border: 1px solid rgb(243, 166, 31);
+}
+
 .text-primary {
   color: rgb(243, 166, 31) !important;
 }
 
-.logo{
+.logo {
   width: 40px;
   height: 40px;
 }
 
 footer a {
-color:white;
+  color: white;
 }
 footer {
-color:white;
+  color: white;
 }
-
-
