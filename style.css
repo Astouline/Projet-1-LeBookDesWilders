@@ -50,3 +50,17 @@
 .bg-orange-opacity {
   background-color: rgba(243, 166, 31, 0.9);
 }
+
+.logo{
+  width: 40px;
+  height: 40px;
+}
+
+footer a {
+color:white;
+}
+footer {
+color:white;
+}
+
+
