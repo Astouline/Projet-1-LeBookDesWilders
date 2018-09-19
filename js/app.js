@@ -130,15 +130,15 @@ $(function() {
     michel: {
       fisrtName: "Michel",
       lastName: "DESCOTES",
-      words: "Mes - Mots - Caractérisants",
-      email: "",
-      github: "",
-      linkedin: "",
-      mobility: "",
-      language: "",
-      group: "",
-      chooseCode: "",
-      tomorrow: ""
+      words: "Créatif - Souriant - Motivé",
+      email: "micheldescotes65@gmail.com",
+      github: "https://github.com/mde51",
+      linkedin: "https://www.linkedin.com/feed/?trk=nav_logo",
+      mobility: "Région de Reims et les Ardennes",
+      language: "HTML-CSS JS-React",
+      group: "Je suis capable de travailler avec beaucoup de personnes très différentes",
+      chooseCode: "Pour exploiter ma créativité en créant des lignes de codes",
+      tomorrow: "je me vois bien avec une petite équipe de développeur web dans une entreprise ou alors en freelance."
     },
     quentin: {
       fisrtName: "Quentin",
