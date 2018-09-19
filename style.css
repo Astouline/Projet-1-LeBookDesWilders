@@ -59,10 +59,15 @@
 }
 
 .bg-orange-opacity {
-  background-color: rgba(243, 166, 31, 0.9);
+  background-color: rgba(243, 166, 31, 0.5);
 }
 
 .btn-primary {
   background-color: rgb(243, 166, 31);
   border: none;
+}
+.text-wild {
+  color: white;
+  text-shadow: 1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, -1px 0 0 black,
+    1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black;
 }
