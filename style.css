@@ -48,7 +48,12 @@
 }
 
 .bg-orange-opacity {
-  background-color: rgba(243, 166, 31, 0.9);
+  background-color: rgba(243, 166, 31, 0.5);
+}
+
+.iconmodal {
+  height: 50%;
+  width: 50%;
 }
 
 .iconmodal:hover {
