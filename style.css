@@ -119,3 +119,10 @@ footer {
 .titre-promo {
   color: white;
 }
+.link-orange {
+  color: rgb(243, 166, 31);
+}
+.link-orange:hover {
+  color: rgb(210, 139, 18);
+  text-decoration: none;
+}

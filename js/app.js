@@ -33,15 +33,16 @@ $(function() {
     corentin: {
       fisrtName: "Corentin",
       lastName: "DE SOTO COBET",
-      words: "",
-      email: "",
-      github: "",
-      linkedin: "",
-      mobility: "",
-      language: "",
-      group: "",
-      chooseCode: "",
-      tomorrow: ""
+      words: "Flexible - A l'écoute - Assidu",
+      email: "corentin.dsc@gmail.com",
+      github: "https://github.com/CorentinReims",
+      linkedin: "https://www.linkedin.com/in/corentin-de-soto-cobet-b5b78b170/",
+      mobility: "Reims",
+      language: "Html, Css(bootstrap), JS(React)",
+      group: "Je m'adapte par rapport aux profils présents dans le groupe.",
+      chooseCode: "La liberté de création avec énormément de possibilités.",
+      tomorrow:
+        "En entreprise avec toujours un projet personnel dans le coin de la tête."
     },
     fabien: {
       fisrtName: "Fabien",
@@ -229,7 +230,7 @@ $(function() {
     data-toggle="modal" 
     data-target="#ModalWilder${
       dataWilders[index].fisrtName
-    }">Découvrir le Wilder</a>`;
+    }">Découvrir son profil</a>`;
 
     document
       .getElementById("wilders")
@@ -321,13 +322,12 @@ $(function() {
     pBackground.innerHTML = `
     <span class="h3">${dataSupervisors[index].fisrtName} <br> ${
       dataSupervisors[index].lastName
-    }</span><br><br>
-    ${dataSupervisors[index].words}<br><br>
+    }</span><br><br><br><br>
     <a href="#" class="btn btn-secondary mt-auto shadow-lg" 
     data-toggle="modal" 
     data-target="#ModalWilder${
       dataSupervisors[index].fisrtName
-    }">Découvrir plus du Wilder ...</a>`;
+    }">Découvrir son profil</a>`;
 
     document
       .getElementById("supervisors")
