@@ -146,15 +146,18 @@ $(function() {
     quentin: {
       fisrtName: "Quentin",
       lastName: "DA SILVA",
-      words: "Mes - Mots - Caractérisants",
-      email: "",
-      github: "",
-      linkedin: "",
-      mobility: "",
-      language: "",
-      group: "",
-      chooseCode: "",
-      tomorrow: ""
+      words: "Optimiste - Curieux - Collectif",
+      email: "quentin_51@live.fr",
+      github: "https://github.com/quentinsd",
+      linkedin: "https://www.linkedin.com/in/quentin-da-silva-50b58b16b/",
+      mobility: "Grand-Est - Haut-De-France - Ile-de-France",
+      language: "HTML / CSS - JavaScript / React",
+      group:
+        "J'aime apporter mes idées au projet, toujours a l'écoute de mes coéquipiés. ",
+      chooseCode:
+        "Car ce n'est pas statique, il y a toujours des évolutions, de nouvelles choses à apprendre et à perfectionner. Pour moi, il ni a rien de plus satisfaisant que de passer d'une page blanche à un projet abouti.",
+      tomorrow:
+        "Je me vois, dans une startup ou bien en entreprise en train de travailler sur un projet avec une équipe, tout en découvrant de nouveaux langages de programmation."
     },
     robin: {
       fisrtName: "Robin",

@@ -61,6 +61,9 @@
 .bg-orange-opacity {
   background-color: rgba(243, 166, 31, 0.5);
 }
+.iconmodal {
+  color: black;
+}
 
 .iconmodal:hover {
   color: rgb(243, 166, 31);
