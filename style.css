@@ -126,3 +126,7 @@ footer {
   color: rgb(210, 139, 18);
   text-decoration: none;
 }
+.inputCopy {
+  position: absolute;
+  left: -9999px;
+}
