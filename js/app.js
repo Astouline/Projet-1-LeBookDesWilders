@@ -102,15 +102,18 @@ $(function() {
     mathieu: {
       fisrtName: "Mathieu",
       lastName: "THOMAS",
-      words: "Mes - Mots - Caractérisants",
-      email: "",
-      github: "",
-      linkedin: "",
-      mobility: "",
-      language: "",
-      group: "",
-      chooseCode: "",
-      tomorrow: ""
+      words: "Dynamisme - Ponctualité - Persévérance",
+      email: "kawacke@gmail.com",
+      github: "https://github.com/Kawacke",
+      linkedin: "https://www.linkedin.com/in/mathieu-thomas-95a855165/",
+      mobility: "Ardennes - Marne",
+      language: "HTML5 / CSS3 / Bootstrap 4 / PHP / JS REACT",
+      group:
+        "Je suis à l'écoute des membres du groupes, afin de mettre en commun toutes les idées.",
+      chooseCode:
+        "Je suis tombé dedans quand jétait jeune, j'ai démarré en autodidacte, et j'ai souhaité poursuivre avec une formation pour apprendre une structure de travail.",
+      tomorrow:
+        "Je souhaiterais travailler en freelance, créer une startup à plusieurs, ou dans une startup en devenir, "
     },
     michael: {
       fisrtName: "Michael",
