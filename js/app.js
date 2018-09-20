@@ -61,7 +61,7 @@ $(document).ready(function() {
     florentin: {
       fisrtName: "Florentin",
       lastName: "COYARD",
-      words: "Ponctuelle - Perséverant - Calme",
+      words: "Ponctuel - Persévérant - Calme",
       email: "florentin.coyard@gmail.com",
       github: "https://github.com/Takoouh",
       linkedin: "https://www.linkedin.com/in/florentin-coyard-72a10016b/",
