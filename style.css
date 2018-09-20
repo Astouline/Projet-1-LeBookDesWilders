@@ -73,22 +73,59 @@
   background-color: rgb(243, 166, 31);
   border: none;
 }
-.text-wild {
-  color: white;
-  text-shadow: 1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, -1px 0 0 black,
-    1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black;
+.btn-primary:hover {
+  color: rgb(243, 166, 31);
+  background-color: white;
+  border: 1px solid rgb(243, 166, 31);
 }
 
-.logo{
+.text-primary {
+  color: rgb(243, 166, 31) !important;
+}
+
+.logo {
   width: 40px;
   height: 40px;
 }
 
 footer a {
-color:white;
+  color: white;
 }
 footer {
-color:white;
+  color: white;
 }
 
-
+@media all and (min-width: 791px) {
+  .titres {
+    font-size: 2rem;
+  }
+}
+@media all and (min-width: 616px) and (max-width: 790px) {
+  .titres {
+    font-size: 1.5rem;
+  }
+}
+@media all and (max-width: 615px) {
+  .titres {
+    font-size: 1.2rem;
+  }
+}
+.titres {
+  background-color: #36383a;
+}
+.titre-book {
+  color: white;
+}
+.titre-promo {
+  color: white;
+}
+header, h2{
+  font-family: 'Bevan', cursive;
+}
+body{
+ font-family: 'Quicksand', sans-serif;
+}
+.inputCopy {
+  position: absolute;
+  left: -9999px;
+}
