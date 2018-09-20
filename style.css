@@ -107,7 +107,7 @@ footer a {
 }
 
 footer a:hover {
-  color: orange;
+  color: rgb(243, 166, 31);
   text-decoration: none;
 }
 
@@ -133,5 +133,11 @@ footer a:hover {
   position: absolute;
   left: -9999px;
 }
-.jumbotron{
+.jobteaser{
+  color: rgb(243, 166, 31);
+  text-decoration: none;
+}
+.jobteaser:hover{
+  color: rgb(204, 139, 41);
+  text-decoration: none;
 }
