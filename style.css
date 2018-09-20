@@ -88,6 +88,9 @@ h2 {
   background-color: white;
   border: 1px solid rgb(243, 166, 31);
 }
+.btn-primary:focus {
+  box-shadow: 0 0 0 0 !important;
+}
 
 .text-primary {
   color: rgb(243, 166, 31) !important;
