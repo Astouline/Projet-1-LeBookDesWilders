@@ -2,7 +2,7 @@ $(document).ready(function() {
   // Object form Wilders
   const dataWilders = {
     benoit: {
-      fisrtName: "Benoit",
+      fisrtName: "Benoît",
       lastName: "NIVEAU",
       words: "Ouvert d'esprit - Sociable - Tranquille",
       email: "be.niveau@hotmail.fr",
@@ -11,9 +11,9 @@ $(document).ready(function() {
       mobility: "Reims, Paris",
       language: "HTML, CSS, JS React",
       group: `Tout est fonction de la composition du groupe, des caractères qui le compose ou des compétences de ceux qui le compose.
-            Je peux autant être en avant qu'en retrait ou au service du groupe. Si je devais être en avant du groupe,  j'ai besoin de maitriser ce que j'expose sinon je ne me sentirai pas légitime.`,
-      chooseCode: `J'ai choisi le code pour donner une orientation nouvelle à ma carrière professionnelle et surtout pour exercer dans un domaine qui me passionne de jours en jours. Domaine dans lequel j'ai encore beaucoup à apprendre et c'est ce qui me motive.`,
-      tomorrow: `Entrain de coder et d'acquérir de l’expérience dans ce domaine et enfin m'épanouir professionnellement.`
+            Je peux autant être en avant qu'en retrait ou au service du groupe. Si je dois être en avant du groupe,  j'ai besoin de maîtriser ce que j'expose.`,
+      chooseCode: `J'ai choisi le code pour donner une orientation nouvelle à ma carrière professionnelle et surtout pour exercer dans un domaine qui me passionne de jour en jour. Domaine dans lequel j'ai encore beaucoup à apprendre et c'est ce qui me motive.`,
+      tomorrow: `En train de coder et d'acquérir de l’expérience dans ce domaine et enfin m'épanouir professionnellement.`
     },
     charles: {
       fisrtName: "Charles",
@@ -27,7 +27,7 @@ $(document).ready(function() {
       group:
         "Je suis là pour fournir mes compétences et aider les autres au maximum.",
       chooseCode:
-        "Etant geek depuis tout petit, il me fallait un métier qui a rapport avec l'informatique. J'ai découvert le code grâce a un article parlant d'une école accessible aux débutants puis j'ai commencé à coder et j'aime ça.",
+        "Etant geek depuis tout petit, il me fallait un métier en rapport avec l'informatique. J'ai découvert le code grâce a un article parlant d'une école accessible aux débutants puis j'ai commencé à coder et j'aime ça.",
       tomorrow: "Dans une entreprise me caractérisant."
     },
     corentin: {
@@ -66,7 +66,7 @@ $(document).ready(function() {
       github: "https://github.com/Takoouh",
       linkedin: "https://www.linkedin.com/in/florentin-coyard-72a10016b/",
       mobility: "Reims",
-      language: "REACT.js",
+      language: "HTML-CSS-REACT.js",
       group: "Je donne des idées et des solutions aux contraintes",
       chooseCode:
         "Je trouve fascinant le fait de taper des lignes de codes et voir un site se mettre en forme !",
@@ -82,13 +82,13 @@ $(document).ready(function() {
       mobility: "Région Champagne-Ardenne",
       language: "html, css, javascript",
       group: "Discret",
-      chooseCode: "Par passion au domaine de l'informatique",
+      chooseCode: "Par passion de l'informatique",
       tomorrow: "Développeur Web"
     },
     leuthsouline: {
       fisrtName: "Leuthsouline",
       lastName: "CHANTHATHIRATH",
-      words: "Persésérante - Rigoureuse - Aimable",
+      words: "Persévérante - Rigoureuse - Aimable",
       email: "r.leuthsouline@gmail.com",
       github: "https://github.com/Astouline",
       linkedin:
@@ -110,14 +110,14 @@ $(document).ready(function() {
       mobility: "Ardennes - Marne",
       language: "HTML5 / CSS3 / Bootstrap 4 / PHP / JS REACT",
       group:
-        "Je suis à l'écoute des membres du groupes, afin de mettre en commun toutes les idées.",
+        "Je suis à l'écoute des membres du groupe, afin de mettre en commun toutes les idées.",
       chooseCode:
         "Je suis tombé dedans quand jétait jeune, j'ai démarré en autodidacte, et j'ai souhaité poursuivre avec une formation pour apprendre une structure de travail.",
       tomorrow:
         "Je souhaiterais travailler en freelance, créer une startup à plusieurs, ou dans une startup en devenir, "
     },
     michael: {
-      fisrtName: "Michael",
+      fisrtName: "Michaël",
       lastName: "BOURNEAU",
       words: "Rigoureux - Adaptabilité",
       email: "michael.bourmeau@outlook.fr",
@@ -144,7 +144,7 @@ $(document).ready(function() {
         "Je suis capable de travailler avec beaucoup de personnes très différentes",
       chooseCode: "Pour exploiter ma créativité en créant des lignes de codes",
       tomorrow:
-        "je me vois bien avec une petite équipe de développeur web dans une entreprise ou alors en freelance."
+        "Je me vois bien avec une petite équipe de développeurs web dans une entreprise ou alors en freelance."
     },
     quentin: {
       fisrtName: "Quentin",
@@ -153,12 +153,12 @@ $(document).ready(function() {
       email: "quentin_51@live.fr",
       github: "https://github.com/quentinsd",
       linkedin: "https://www.linkedin.com/in/quentin-da-silva-50b58b16b/",
-      mobility: "Grand-Est - Haut-De-France - Ile-de-France",
+      mobility: "Grand-Est - Hauts-De-France - Ile-de-France",
       language: "HTML / CSS - JavaScript / React",
       group:
-        "J'aime apporter mes idées au projet, toujours a l'écoute de mes coéquipiés. ",
+        "J'aime apporter mes idées au projet, toujours a l'écoute de mes coéquipiers. ",
       chooseCode:
-        "Car ce n'est pas statique, il y a toujours des évolutions, de nouvelles choses à apprendre et à perfectionner. Pour moi, il ni a rien de plus satisfaisant que de passer d'une page blanche à un projet abouti.",
+        "Car ce n'est pas statique, il y a toujours des évolutions, de nouvelles choses à apprendre et à perfectionner. Pour moi, il n'y a rien de plus satisfaisant que de passer d'une page blanche à un projet abouti.",
       tomorrow:
         "Je me vois, dans une startup ou bien en entreprise en train de travailler sur un projet avec une équipe, tout en découvrant de nouveaux langages de programmation."
     },
