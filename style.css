@@ -84,11 +84,28 @@
   height: 40px;
 }
 
-footer a {
-color:white;
+svg{
+  width: 40px;
+  height: 40px;
 }
-footer {
-color:white;
+
+
+
+.lienWild{
+  margin-top:10px;
+}
+
+footer a{
+  color:white;
+}
+
+footer a:hover {
+  color: orange;
+  text-decoration: none;
+}
+
+.textFooter{
+  color:White;
 }
 
 
