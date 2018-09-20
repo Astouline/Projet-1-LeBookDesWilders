@@ -140,9 +140,11 @@ $(document).ready(function() {
       linkedin: "https://www.linkedin.com/feed/?trk=nav_logo",
       mobility: "Région de Reims et les Ardennes",
       language: "HTML-CSS JS-React",
-      group: "Je suis capable de travailler avec beaucoup de personnes très différentes",
+      group:
+        "Je suis capable de travailler avec beaucoup de personnes très différentes",
       chooseCode: "Pour exploiter ma créativité en créant des lignes de codes",
-      tomorrow: "je me vois bien avec une petite équipe de développeur web dans une entreprise ou alors en freelance."
+      tomorrow:
+        "je me vois bien avec une petite équipe de développeur web dans une entreprise ou alors en freelance."
     },
     quentin: {
       fisrtName: "Quentin",
@@ -365,17 +367,17 @@ $(document).ready(function() {
             <article class="row">
               <figure class="col-sm-4 offset-1 col-12">
                 <div class="row">
-                  <div class="col-sm-12 col-6">
+                  <div class="col-sm-12 col-5">
                     <img class="rounded-circle img-fluid" src="photos/${
                       dataWilders[index].fisrtName
                     }300.jpg"
                       alt="image de profil">
                   </div>
-                  <div class="col-sm-12 col-6 my-auto">
+                  <div class="col-sm-12 col-7 my-auto">
                     <figcaption>
-                      <h3 class="text-center">${dataWilders[index].fisrtName} ${
-      dataWilders[index].lastName
-    }</h3>
+                      <h3 class="text-center nomprenom">${
+                        dataWilders[index].fisrtName
+                      } ${dataWilders[index].lastName}</h3>
                     </figcaption>
                   </div>
                 </div>
