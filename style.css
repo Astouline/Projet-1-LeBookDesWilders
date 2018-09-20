@@ -73,8 +73,60 @@
   background-color: rgb(243, 166, 31);
   border: none;
 }
-.text-wild {
+.btn-primary:hover {
+  color: rgb(243, 166, 31);
+  background-color: white;
+  border: 1px solid rgb(243, 166, 31);
+}
+
+.text-primary {
+  color: rgb(243, 166, 31) !important;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+footer a {
   color: white;
-  text-shadow: 1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, -1px 0 0 black,
-    1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black;
+}
+footer {
+  color: white;
+}
+
+@media all and (min-width: 791px) {
+  .titres {
+    font-size: 2rem;
+  }
+}
+@media all and (min-width: 616px) and (max-width: 790px) {
+  .titres {
+    font-size: 1.5rem;
+  }
+}
+@media all and (max-width: 615px) {
+  .titres {
+    font-size: 1.2rem;
+  }
+}
+.titres {
+  background-color: #36383a;
+}
+.titre-book {
+  color: white;
+}
+.titre-promo {
+  color: white;
+}
+.link-orange {
+  color: rgb(243, 166, 31);
+}
+.link-orange:hover {
+  color: rgb(210, 139, 18);
+  text-decoration: none;
+}
+.inputCopy {
+  position: absolute;
+  left: -9999px;
 }

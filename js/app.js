@@ -1,4 +1,4 @@
-$(function() {
+$(document).ready(function() {
   // Object form Wilders
   const dataWilders = {
     benoit: {
@@ -33,15 +33,16 @@ $(function() {
     corentin: {
       fisrtName: "Corentin",
       lastName: "DE SOTO COBET",
-      words: "",
-      email: "",
-      github: "",
-      linkedin: "",
-      mobility: "",
-      language: "",
-      group: "",
-      chooseCode: "",
-      tomorrow: ""
+      words: "Flexible - A l'écoute - Assidu",
+      email: "corentin.dsc@gmail.com",
+      github: "https://github.com/CorentinReims",
+      linkedin: "https://www.linkedin.com/in/corentin-de-soto-cobet-b5b78b170/",
+      mobility: "Reims",
+      language: "Html, Css(bootstrap), JS(React)",
+      group: "Je m'adapte par rapport aux profils présents dans le groupe.",
+      chooseCode: "La liberté de création avec énormément de possibilités.",
+      tomorrow:
+        "En entreprise avec toujours un projet personnel dans le coin de la tête."
     },
     fabien: {
       fisrtName: "Fabien",
@@ -102,15 +103,18 @@ $(function() {
     mathieu: {
       fisrtName: "Mathieu",
       lastName: "THOMAS",
-      words: "Mes - Mots - Caractérisants",
-      email: "",
-      github: "",
-      linkedin: "",
-      mobility: "",
-      language: "",
-      group: "",
-      chooseCode: "",
-      tomorrow: ""
+      words: "Dynamisme - Ponctualité - Persévérance",
+      email: "kawacke@gmail.com",
+      github: "https://github.com/Kawacke",
+      linkedin: "https://www.linkedin.com/in/mathieu-thomas-95a855165/",
+      mobility: "Ardennes - Marne",
+      language: "HTML5 / CSS3 / Bootstrap 4 / PHP / JS REACT",
+      group:
+        "Je suis à l'écoute des membres du groupes, afin de mettre en commun toutes les idées.",
+      chooseCode:
+        "Je suis tombé dedans quand jétait jeune, j'ai démarré en autodidacte, et j'ai souhaité poursuivre avec une formation pour apprendre une structure de travail.",
+      tomorrow:
+        "Je souhaiterais travailler en freelance, créer une startup à plusieurs, ou dans une startup en devenir, "
     },
     michael: {
       fisrtName: "Michael",
@@ -226,7 +230,7 @@ $(function() {
     data-toggle="modal" 
     data-target="#ModalWilder${
       dataWilders[index].fisrtName
-    }">Découvrir le Wilder</a>`;
+    }">Découvrir son profil</a>`;
 
     document
       .getElementById("wilders")
@@ -248,12 +252,22 @@ $(function() {
     clement: {
       fisrtName: "Clement",
       lastName: "BECHETOILLE",
-      words: "Mes - Mots - Caractérisants"
+      description:
+        "Campus manager, Reims. <br> Diplômé de l’ESSCA d’Angers, Clément a d’abord travaillé à des fonctions marketing dans l’édition et les objets éducatifs avant de développer son expérience dans l’enseignement supérieur au Vietnam puis en France sur les sujets d’insertion professionnelle, de développement personnel et de recrutement innovant. Basé à Reims depuis quelques années, il s’implique dans les initiatives locales notamment l’organisation de TEDxReims. Passionné par les nouvelles approches pédagogiques, il a rejoint la Wild Code School comme Campus Manager à Reims",
+      wild:
+        "Aller à la découverte des cultures du monde, en Asie notamment, et surtout de tout ce qui se mange !",
+      linkedin: "https://www.linkedin.com/in/clementbechetoille/",
+      email: "clement@wildcodeschool.fr"
     },
     thomas: {
       fisrtName: "Thomas",
       lastName: "CULDAUT",
-      words: "Mes - Mots - Caractérisants"
+      description:
+        "Après des études en informatique, Thomas a tout de suite lié la pratique du développement et de la pédagogie dans le monde de la formation professionnelle en France et au Cameroun. S’ensuit une expérience dans une startup parisienne spécialisée dans le développement d’application événementielle au sein de laquelle il développe des jeux en AS3, Unity et PHP/JavaScript. Cela le mène à diriger une équipe de dév en Inde où il gère la réalisation de projets web.",
+      wild:
+        "Amateur de jeu de rôle, de plateau et de stratégie à base de figurines, quand il ne code pas Thomas peut passer des heures entre amis autour d’un jeu.",
+      linkedin: "https://www.linkedin.com/in/thomas-culdaut-76ba593/",
+      email: "thomas@wildcodeschool.fr"
     }
   };
 
@@ -285,9 +299,7 @@ $(function() {
 
     let spanFigcaption = document.createElement("span");
     spanFigcaption.setAttribute("class", "btn btn-primary");
-    spanFigcaption.innerText = `${dataSupervisors[index].fisrtName} ${
-      dataSupervisors[index].lastName
-    }`;
+    spanFigcaption.innerText = `${dataSupervisors[index].fisrtName}`;
 
     let aside = document.createElement("aside");
     aside.setAttribute(
@@ -310,13 +322,12 @@ $(function() {
     pBackground.innerHTML = `
     <span class="h3">${dataSupervisors[index].fisrtName} <br> ${
       dataSupervisors[index].lastName
-    }</span><br><br>
-    ${dataSupervisors[index].words}<br><br>
+    }</span><br><br><br><br>
     <a href="#" class="btn btn-secondary mt-auto shadow-lg" 
     data-toggle="modal" 
     data-target="#ModalWilder${
-      dataSupervisors[index].lastName
-    }">Découvrir plus du Wilder ...</a>`;
+      dataSupervisors[index].fisrtName
+    }">Découvrir son profil</a>`;
 
     document
       .getElementById("supervisors")
@@ -398,9 +409,11 @@ $(function() {
                   </figure>
                   <!------------------------------------------------------- MAIL ---------------------------------------------------------->
                   <figure class="col-4 col-lg-3  text-center">
-                    <a title="E-mail" data-container="body" data-toggle="popover" data-placement="right" data-content="${
+                    <input type="text" value="${
                       dataWilders[index].email
-                    }" ><span class="iconmodal"><svg data-icon="envelope"
+                    }" class="${dataWilders[index].fisrtName} inputCopy">
+                    <a href="#" class="copy" data-container="body" data-toggle="popover" data-placement="right" data-content="Adresse Mail copiée !"><span data-balloon="size: 2x"
+                        data-balloon-pos="up" class="iconmodal"><svg aria-hidden="true" data-prefix="fas" data-icon="envelope"
                           role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                           <path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path>
                         </svg></span></a>
@@ -411,7 +424,7 @@ $(function() {
             <!-- 3 MOTS -->
             <section class="row">
               <article class="col-12">
-                <hr class="w-50 bg-orange-opacity mt-0">
+                <hr class="w-50 mt-0 bg-orange-opacity">
                 <h3 class="text-center">${dataWilders[index].words}</h3>
                 <hr class="w-50 bg-orange-opacity">
               </article>
@@ -440,6 +453,72 @@ $(function() {
 
     document.getElementById("Modal").appendChild(containModal);
   }
+
+  for (let index in dataSupervisors) {
+    let containModalSupervisors = document.createElement("article");
+    containModalSupervisors.innerHTML = `
+    <!-- MODAL -->
+    <div class="modal fade" id="ModalWilder${
+      dataSupervisors[index].fisrtName
+    }" tabindex="-1" role="dialog" aria-labelledby="ModalWilder-Title"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header border border-white p-1">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <!-- PHOTO + NOM/PRENOM -->
+          <section class="modal-body pt-0 container-fluid">
+            <article class="row">
+              <figure class="col-12 text-center">
+                <img class="rounded-circle img-fluid" src="photos/${
+                  dataSupervisors[index].fisrtName
+                }300.jpg"
+                  alt="image de profil">
+              </figure>
+              <figcaption class="col-12">
+                  <h3 class="text-center">${dataSupervisors[index].fisrtName} ${
+      dataSupervisors[index].lastName
+    }</h3>
+              </figcaption>
+            </article>
+            <!-- 3 MOTS -->
+            <section class="row">
+              <article class="col-12">
+                <hr class="w-50 mt-0 bg-orange-opacity">
+                <h4 class="text-center">Son parcours</h4>
+                <p class="text-center">${dataSupervisors[index].description}</p>
+              </article>
+              <article class="col-12 mx-auto">
+                <h4 class="text-center">Côté wild</h4>
+                <p class="text-center">
+                  ${dataSupervisors[index].wild}</p>
+              </article>
+            </section>
+          </section>
+        </div>
+
+      </div>
+    </div>
+
+    `;
+
+    document.getElementById("Modal").appendChild(containModalSupervisors);
+  }
+
+  function CopyToClipboard(url) {
+    /* Select the text field */
+    url.select();
+    /* Copy the text inside the text field */
+    document.execCommand("copy");
+  }
+
+  $("a.copy").click(function() {
+    element = $(this).prev();
+    CopyToClipboard(element);
+  });
 });
 
 //POPOVER
