@@ -136,3 +136,10 @@ footer a:hover {
   position: absolute;
   left: -9999px;
 }
+
+@media all and (max-width: 450px) {
+  .nomprenom {
+    font-size: 15px;
+    text-align: justify;
+  }
+}

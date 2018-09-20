@@ -367,17 +367,17 @@ $(document).ready(function() {
             <article class="row">
               <figure class="col-sm-4 offset-1 col-12">
                 <div class="row">
-                  <div class="col-sm-12 col-6">
+                  <div class="col-sm-12 col-5">
                     <img class="rounded-circle img-fluid" src="photos/${
                       dataWilders[index].fisrtName
                     }300.jpg"
                       alt="image de profil">
                   </div>
-                  <div class="col-sm-12 col-6 my-auto">
+                  <div class="col-sm-12 col-7 my-auto">
                     <figcaption>
-                      <h3 class="text-center">${dataWilders[index].fisrtName} ${
-      dataWilders[index].lastName
-    }</h3>
+                      <h3 class="text-center nomprenom">${
+                        dataWilders[index].fisrtName
+                      } ${dataWilders[index].lastName}</h3>
                     </figcaption>
                   </div>
                 </div>
