@@ -382,9 +382,9 @@ $(function() {
               </figure>
               <div class="col-sm-6 offset-sm-1 col-12 my-auto">
                 <article class="text-center">
-                  <p><b>Mobiliter profesionnel</b>
+                  <p><b>Mobilité professionnelle</b>
                     <br>${dataWilders[index].mobility}</p>
-                  <p><b>Langage de programmation pratiquer</b>
+                  <p><b>Langage de programmation pratiqué</b>
                     <br>${dataWilders[index].language}</p>
                 </article>
                 <div class="row d-flex justify-content-center pl-3">
