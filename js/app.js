@@ -3,6 +3,7 @@ $(document).ready(function() {
   const dataWilders = {
     benoit: {
       fisrtName: "Benoît",
+      link: "Benoit",
       lastName: "NIVEAU",
       words: "Ouvert d'esprit - Sociable - Tranquille",
       email: "be.niveau@hotmail.fr",
@@ -17,6 +18,7 @@ $(document).ready(function() {
     },
     charles: {
       fisrtName: "Charles",
+      link: "Charles",
       lastName: "CREPIN",
       words: "Geek - Attentif - Assidu.",
       email: "c.crepin@net-c.fr",
@@ -32,6 +34,7 @@ $(document).ready(function() {
     },
     corentin: {
       fisrtName: "Corentin",
+      link: "Corentin",
       lastName: "DE SOTO COBET",
       words: "Flexible - A l'écoute - Assidu",
       email: "corentin.dsc@gmail.com",
@@ -46,6 +49,7 @@ $(document).ready(function() {
     },
     fabien: {
       fisrtName: "Fabien",
+      link: "Fabien",
       lastName: "RAYMOND",
       words: "Collectif - Sérieux - Sportif",
       email: "voortexxx@gmail.com",
@@ -60,6 +64,7 @@ $(document).ready(function() {
     },
     florentin: {
       fisrtName: "Florentin",
+      link: "Florentin",
       lastName: "COYARD",
       words: "Ponctuel - Persévérant - Calme",
       email: "florentin.coyard@gmail.com",
@@ -74,6 +79,7 @@ $(document).ready(function() {
     },
     gautier: {
       fisrtName: "Gautier",
+      link: "Gautier",
       lastName: "SIMONIN",
       words: "A l'écoute - Souriant - Discret.",
       email: "gautier08000@hotmail.com",
@@ -87,6 +93,7 @@ $(document).ready(function() {
     },
     leuthsouline: {
       fisrtName: "Leuthsouline",
+      link: "Leuthsouline",
       lastName: "CHANTHATHIRATH",
       words: "Persévérante - Rigoureuse - Aimable",
       email: "r.leuthsouline@gmail.com",
@@ -102,6 +109,7 @@ $(document).ready(function() {
     },
     mathieu: {
       fisrtName: "Mathieu",
+      link: "Mathieu",
       lastName: "THOMAS",
       words: "Dynamisme - Ponctualité - Persévérance",
       email: "kawacke@gmail.com",
@@ -118,6 +126,7 @@ $(document).ready(function() {
     },
     michael: {
       fisrtName: "Michaël",
+      link: "Michael",
       lastName: "BOURNEAU",
       words: "Rigoureux - Adaptabilité",
       email: "michael.bourmeau@outlook.fr",
@@ -133,6 +142,7 @@ $(document).ready(function() {
     },
     michel: {
       fisrtName: "Michel",
+      link: "Michel",
       lastName: "DESCOTES",
       words: "Créatif - Souriant - Motivé",
       email: "micheldescotes65@gmail.com",
@@ -148,6 +158,7 @@ $(document).ready(function() {
     },
     quentin: {
       fisrtName: "Quentin",
+      link: "Quentin",
       lastName: "DA SILVA",
       words: "Optimiste - Curieux - Collectif",
       email: "quentin_51@live.fr",
@@ -164,6 +175,7 @@ $(document).ready(function() {
     },
     robin: {
       fisrtName: "Robin",
+      link: "Robin",
       lastName: "GUERRE",
       words: "Calme - Curieux - Passionné",
       email: "rb.guerre@gmail.com",
@@ -190,7 +202,7 @@ $(document).ready(function() {
 
     let image = document.createElement("img");
     image.setAttribute("class", "card-img rounded-circle");
-    image.setAttribute("src", `photos/${dataWilders[index].fisrtName}300.jpg`);
+    image.setAttribute("src", `photos/${dataWilders[index].link}300.jpg`);
 
     let figcaption = document.createElement("figcaption");
     figcaption.setAttribute(
@@ -369,7 +381,7 @@ $(document).ready(function() {
                 <div class="row">
                   <div class="col-sm-12 col-5">
                     <img class="rounded-circle img-fluid" src="photos/${
-                      dataWilders[index].fisrtName
+                      dataWilders[index].link
                     }300.jpg"
                       alt="image de profil">
                   </div>
