@@ -266,6 +266,7 @@ $(document).ready(function() {
     clement: {
       fisrtName: "Clement",
       lastName: "BECHETOILLE",
+      function: "Campus Manager",
       description:
         "Campus manager, Reims. <br> Diplômé de l’ESSCA d’Angers, Clément a d’abord travaillé à des fonctions marketing dans l’édition et les objets éducatifs avant de développer son expérience dans l’enseignement supérieur au Vietnam puis en France sur les sujets d’insertion professionnelle, de développement personnel et de recrutement innovant. Basé à Reims depuis quelques années, il s’implique dans les initiatives locales notamment l’organisation de TEDxReims. Passionné par les nouvelles approches pédagogiques, il a rejoint la Wild Code School comme Campus Manager à Reims",
       wild:
@@ -276,6 +277,7 @@ $(document).ready(function() {
     thomas: {
       fisrtName: "Thomas",
       lastName: "CULDAUT",
+      function: "Formateur JS REACT",
       description:
         "Après des études en informatique, Thomas a tout de suite lié la pratique du développement et de la pédagogie dans le monde de la formation professionnelle en France et au Cameroun. S’ensuit une expérience dans une startup parisienne spécialisée dans le développement d’application événementielle au sein de laquelle il développe des jeux en AS3, Unity et PHP/JavaScript. Cela le mène à diriger une équipe de dév en Inde où il gère la réalisation de projets web.",
       wild:
@@ -336,7 +338,8 @@ $(document).ready(function() {
     pBackground.innerHTML = `
     <span class="h3">${dataSupervisors[index].fisrtName} <br> ${
       dataSupervisors[index].lastName
-    }</span><br><br><br><br>
+    }</span><br><br>
+    ${dataSupervisors[index].function}<br><br>
     <a href="#" class="btn btn-secondary mt-auto shadow-lg" 
     data-toggle="modal" 
     data-target="#ModalWilder${
@@ -485,18 +488,49 @@ $(document).ready(function() {
           </div>
           <!-- PHOTO + NOM/PRENOM -->
           <section class="modal-body pt-0 container-fluid">
-            <article class="row">
-              <figure class="col-12 text-center">
-                <img class="rounded-circle img-fluid" src="photos/${
-                  dataSupervisors[index].fisrtName
-                }300.jpg"
-                  alt="image de profil">
+          <article class="row">
+              <figure class="col-sm-4 offset-1 col-12">
+                <div class="row">
+                  <div class="col-sm-12 col-5">
+                    <img class="rounded-circle img-fluid" src="photos/${
+                      dataSupervisors[index].fisrtName
+                    }300.jpg"
+                      alt="image de profil">
+                  </div>
+                  <div class="col-sm-12 col-7 my-auto">
+                    <figcaption>
+                      <h3 class="text-center nomprenom">${
+                        dataSupervisors[index].fisrtName
+                      } ${dataSupervisors[index].lastName}</h3>
+                    </figcaption>
+                  </div>
+                </div>
               </figure>
-              <figcaption class="col-12">
-                  <h3 class="text-center">${dataSupervisors[index].fisrtName} ${
-      dataSupervisors[index].lastName
-    }</h3>
-              </figcaption>
+              <div class="col-sm-6 offset-sm-1 col-12 my-auto">
+                <div class="row d-flex justify-content-center pl-3">
+                  <!------------------------------------------------------ LINKEDIN ------------------------------------------------------>
+                  <p class="col-12 text-center"><b>Contact</b></p>
+                  <figure class="col-4 col-lg-3 text-center w-50">
+                    <a href="${
+                      dataSupervisors[index].linkedin
+                    }" title="Lien linkedin" target="_blank"><span class="iconmodal"><svg data-icon="linkedin"
+                          role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                          <path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+                        </svg></span></a>
+                  </figure>
+                  <!------------------------------------------------------- MAIL ---------------------------------------------------------->
+                  <figure class="col-4 col-lg-3  text-center">
+                    <input type="text" value="${
+                      dataSupervisors[index].email
+                    }" class="${dataSupervisors[index].fisrtName} inputCopy">
+                    <a href="#" class="copy" data-container="body" data-toggle="popover" data-placement="right" data-content="Adresse Mail copiée !"><span data-balloon="size: 2x"
+                        data-balloon-pos="up" class="iconmodal"><svg aria-hidden="true" data-prefix="fas" data-icon="envelope"
+                          role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path>
+                        </svg></span></a>
+                  </figure>
+                </div>
+              </div>
             </article>
             <!-- 3 MOTS -->
             <section class="row">
