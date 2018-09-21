@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css?family=Rozha+One");
+@import url("https://fonts.googleapis.com/css?family=Exo+2");
+body {
+  background-color: #efefef;
+  font-family: "Quicksand", sans-serif;
+}
+header,
+h2 {
+  font-family: "Rozha One";
+}
+.vignette {
+  height: 320px;
+  border-radius: 50%;
+  margin-top: 10px;
+  position: relative;
+}
+@media all and (min-width: 415px) and (max-width: 767px) {
+  .vignette {
+    height: 460px;
+  }
+}
+@media all and (max-width: 379px) {
+  .vignette {
+    height: 280px;
+  }
+}
+.vignette .texte,
+.vignette .photo {
+  -webkit-backface-visibility: hidden;
+  /* Permet d'éviter de voir le bloc de dos */
+  backface-visibility: hidden;
+  /* Permet d'éviter de voir le bloc de dos */
+  -webkit-transition: 2s;
+  /* For Safari 3.1 to 6.0 */
+  transition: 1s;
+
+  border-radius: 50%;
+}
+
+.photo {
+  position: absolute;
+  z-index: 10;
+}
+
+.texte {
+  position: absolute;
+  -webkit-transform: rotateY(-180deg);
+  /* Safari */
+  transform: rotateY(-180deg);
+  /* Celui-ci est retourné par défaut */
+  z-index: 20;
+}
+
+.vignette:hover .photo,
+.vignette:focus .photo {
+  -webkit-transform: rotateY(180deg);
+  /* Safari */
+  transform: rotateY(180deg);
+  z-index: 20;
+}
+
+.vignette:hover .texte,
+.vignette:focus .texte {
+  -webkit-transform: rotateY(0deg);
+  /* Safari */
+  transform: rotateY(0deg);
+  /* On passe de -180° à 180° : tour complet */
+  z-index: 10;
+}
+
+.bg-orange-opacity {
+  background-color: rgba(243, 166, 31, 0.5);
+}
+.iconmodal {
+  color: black;
+}
+
+.iconmodal:hover {
+  color: rgb(243, 166, 31);
+}
+
+.btn-primary {
+  background-color: rgb(243, 166, 31);
+  border: none;
+}
+.btn-primary:hover {
+  color: rgb(243, 166, 31);
+  background-color: white;
+  border: 1px solid rgb(243, 166, 31);
+}
+.btn-primary:active {
+  color: rgb(243, 166, 31) !important;
+  background-color: white !important;
+  border: 1px solid rgb(243, 166, 31) !important;
+  box-shadow: 0 0 0 0 !important;
+}
+.btn-primary:focus {
+  box-shadow: 0 0 0 0 !important;
+}
+
+.text-primary {
+  color: rgb(243, 166, 31) !important;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.lienWild {
+  margin-top: 10px;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: rgb(243, 166, 31);
+  text-decoration: none;
+}
+
+.textFooter {
+  color: White;
+}
+
+.titres {
+  font-size: 2rem;
+}
+
+@media all and (max-width: 575px) {
+  header img {
+    height: 100px !important;
+  }
+}
+
+.titres {
+  background-color: #36383a;
+  color: white;
+}
+.inputCopy {
+  position: absolute;
+  left: -9999px;
+}
+
+@media all and (max-width: 450px) {
+  .nomprenom {
+    font-size: 15px;
+    text-align: justify;
+  }
+}
+.jobteaser {
+  color: rgb(243, 166, 31);
+  text-decoration: none;
+}
+.jobteaser:hover {
+  color: rgb(204, 139, 41);
+  text-decoration: none;
+}
