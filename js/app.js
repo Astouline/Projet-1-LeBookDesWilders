@@ -127,7 +127,7 @@ $(document).ready(function() {
     michael: {
       fisrtName: "Michaël",
       link: "Michael",
-      lastName: "BOURNEAU",
+      lastName: "BOURMEAU",
       words: "Rigoureux - Adaptabilité",
       email: "michael.bourmeau@outlook.fr",
       github: "https://github.com/NovaaHD",
