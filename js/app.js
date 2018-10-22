@@ -1,5 +1,6 @@
 $(document).ready(function() {
   // Object form Wilders
+
   const dataWilders = {
     benoit: {
       fisrtName: "Benoît",
@@ -240,7 +241,7 @@ $(document).ready(function() {
       dataWilders[index].lastName
     }</span><br><br>
     ${dataWilders[index].words}<br><br>
-    <a href="#" class="btn btn-secondary mt-auto shadow-lg" 
+    <a href="#" class="removeTranslate btn btn-secondary mt-auto shadow-lg" 
     data-toggle="modal" 
     data-target="#ModalWilder${
       dataWilders[index].fisrtName
@@ -568,6 +569,15 @@ $(document).ready(function() {
     e.preventDefault();
     element = $(this).prev();
     CopyToClipboard(element);
+  });
+
+  $("a.removeTranslate").click(function() {
+    $(".photo").addClass("notransition");
+    $(".texte").addClass("notransition");
+    setInterval(() => {
+      $(".photo").removeClass("notransition");
+      $(".texte").removeClass("notransition");
+    }, 1000);
   });
 });
 

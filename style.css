@@ -68,6 +68,13 @@ h2 {
   z-index: 10;
 }
 
+.notransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
 .bg-orange-opacity {
   background-color: rgba(243, 166, 31, 0.5);
 }
