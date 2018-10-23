@@ -115,7 +115,7 @@ $(document).ready(function() {
       words: "Dynamisme - Ponctualité - Persévérance",
       email: "kawacke@gmail.com",
       github: "https://github.com/Kawacke",
-      linkedin: "https://www.linkedin.com/in/mathieu-thomas-95a855165/",
+      linkedin: "https://www.linkedin.com/in/mathieu-thomas-pro",
       mobility: "Ardennes - Marne",
       language: "HTML5 / CSS3 / Bootstrap 4 / PHP / JS REACT",
       group:
@@ -128,7 +128,7 @@ $(document).ready(function() {
     michael: {
       fisrtName: "Michaël",
       link: "Michael",
-      lastName: "BOURNEAU",
+      lastName: "BOURMEAU",
       words: "Rigoureux - Adaptabilité",
       email: "michael.bourmeau@outlook.fr",
       github: "https://github.com/NovaaHD",
